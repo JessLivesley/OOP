@@ -1,0 +1,12 @@
+{
+    "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": false,
+      "java": false,
+      "python": false,
+      "javascript": false
+    },
+    "github.copilot.inlineSuggest.enable": false,
+    "java.configuration.updateBuildConfiguration": "interactive"
+  }
