@@ -19,10 +19,17 @@ public class CalculateRect{
         int intDivision = intLength / intWidth;
         double floatDivision =(double) intLength / intWidth;
 
+        String lengthType = (length % 2 == 0) ? "even" : "odd";
+        String widthType = (width % 2 == 0) ? "even" : "odd";
+
+
+
         System.out.println("The Area of the rectangle is:  " + area);
         System.out.println("The Perimeter of the rectangle is: " + perimeter);
         System.out.println("Integer Division (" + intLength + "/" + intWidth + ") = " + intDivision);
         System.out.println("Floating-point Division (" + intLength + " /" + intWidth + ") = " + floatDivision);
+        System.out.println("Length: " + length + " (" + lengthType + ")");
+        System.out.println("Width: " + width + " (" + widthType + ")");
 
         scanner.close();
     }       
