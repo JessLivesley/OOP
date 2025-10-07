@@ -48,6 +48,8 @@ public class GuessingGame {
                 System.out.println("Thanks for playing");
              }
          }
+      
     }
+   
 }
 
