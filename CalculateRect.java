@@ -10,19 +10,29 @@ public class CalculateRect{
         System.out.println("Enter rectangle width: " );
         double width = Double.parseDouble(scanner.nextLine());
 
-        double area = length * width;
-        double perimeter = 2 * (length + width);
 
-        int intLength = (int) length;
-        int intWidth = (int) width;
+        boolean isValidation =true;
 
-        int intDivision = intLength / intWidth;
-        double floatDivision =(double) intLength / intWidth;
+        if (length <= 0 || width <= 0) {
+            System.out.println("Error: Length and width must be positive");
+            isValidation = false;
+        }
 
-        String lengthType = (length % 2 == 0) ? "even" : "odd";
-        String widthType = (width % 2 == 0) ? "even" : "odd";
+        if (isValidation) {
+            
+            double area = length * width;
+            double perimeter = 2 * (length + width);
 
+            int intLength = (int) length;
+            int intWidth = (int) width;
 
+            int intDivision = intLength / intWidth;
+            double floatDivision =(double) intLength / intWidth;
+
+            String lengthType = (length % 2 == 0) ? "even" : "odd";
+            String widthType = (width % 2 == 0) ? "even" : "odd";
+
+        
 
         System.out.println("The Area of the rectangle is:  " + area);
         System.out.println("The Perimeter of the rectangle is: " + perimeter);
@@ -31,6 +41,8 @@ public class CalculateRect{
         System.out.println("Length: " + length + " (" + lengthType + ")");
         System.out.println("Width: " + width + " (" + widthType + ")");
 
+        }
+        
         scanner.close();
     }       
 }
