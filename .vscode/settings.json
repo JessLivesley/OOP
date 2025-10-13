@@ -8,5 +8,6 @@
       "javascript": false
     },
     "github.copilot.inlineSuggest.enable": false,
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.debug.settings.onBuildFailureProceed": true
   }
