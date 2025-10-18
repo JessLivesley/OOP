@@ -13,6 +13,10 @@ public class Student {
         this.gpa=gpa; 
     }
 
+    public Student (String name, int studentId) {
+        this.name=name;
+        this.studentId=studentId;
+    }
 
     public  void displayInfo(){
         System.out.println(name + "'s Student iD is : " + studentId + "\n" + name + "'s age is: " + age + "\n" + name + "'s GPA is: " + gpa + ".\n");
@@ -24,6 +28,10 @@ public class Student {
 
     public boolean canGraduate(){
         return gpa >= 2.0;
+    }
+
+    public void updateGPA(double newGPA){
+        this.gpa = newGPA;
     }
 
     public static void main (String [] args) {
@@ -42,6 +50,14 @@ public class Student {
     System.out.println("Can Jess graduate? " + student1.canGraduate() + ("\n"));
     System.out.println("Can Rob graduate? " + student2.canGraduate() + ("\n"));
     System.out.println("Can Lola graduate? " + student3.canGraduate() + ("\n"));
+
+    student2.updateGPA(3.6);
+
+    System.out.println("After updating R$ob's GPA: ");
+
+    student1.displayInfo();
+    student2.displayInfo();
+    student3.displayInfo();
 
  }
 }
