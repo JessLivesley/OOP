@@ -1,3 +1,5 @@
+import Tutorial2.BankAccount;
+
 public class BankAccount {
     private String ownerName;
     private double balance;

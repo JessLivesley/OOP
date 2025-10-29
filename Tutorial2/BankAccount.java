@@ -1,3 +1,6 @@
+import BankAccount;
+
+package Tutorial2;
 public class BankAccount {
     private double accountBalance;
     protected String accountType;
@@ -102,13 +105,13 @@ class AccessTest {
         System.out.println("Account Number: " + account.accountNumber);
 
         // ❌ Protected - not accessible through object reference outside package
-        System.out.println("Account Type: " + account.accountType); // <- ERROR
+        //System.out.println("Account Type: " + account.accountType); // <- ERROR
 
         // ❌ Package-private - not accessible outside banking package
-        System.out.println("Customer ID: " + account.customerID); // <- ERROR
+        //System.out.println("Customer ID: " + account.customerID); // <- ERROR
 
         // ❌ Private - not accessible outside its class
-        System.out.println("Balance: " + account.balance); // <- ERROR
+        //System.out.println("Balance: " + account.balance); // <- ERROR
 
         // ✅ Can use public methods to access private fields safely
         System.out.println("Balance (via getter): " + account.getBalance());

@@ -1,3 +1,4 @@
+package Tutorial2;
 import java.util.Scanner;
 
 import PersonPractice.Person;
