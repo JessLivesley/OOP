@@ -1,3 +1,4 @@
+package Tutorial2;
 public class Rectangle {
     
     private double width;
