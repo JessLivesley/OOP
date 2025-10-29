@@ -1,3 +1,5 @@
+import MockTestTask2.Car;
+
 public class Car {
     
     private String brand;

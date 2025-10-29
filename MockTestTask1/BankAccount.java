@@ -23,6 +23,10 @@ public class BankAccount {
 
     }
 
+    public double getBalance(){
+        return balance;
+    }
+
     public static void main(String[] args) {
         BankAccount account1 = new BankAccount ("Jess", 7888);
         BankAccount account2 = new BankAccount ("Rob", 3728);

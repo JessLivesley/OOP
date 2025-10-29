@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import PersonPractice.Person;
+
 public class Person {
 
 private String name;
